@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="stylesheet" href="../style.css">
+<title>Menu - CHEZ SAVEUR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#4c6c50",
+                        "surface-variant": "#ede0d9",
+                        "tertiary-container": "#65635f",
+                        "on-primary-fixed": "#3c0800",
+                        "secondary-container": "#c8ecc9",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#e3e0db",
+                        "on-tertiary-fixed-variant": "#484743",
+                        "secondary-fixed": "#c8ecc9",
+                        "outline": "#89726c",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#7e2c15",
+                        "surface-container-high": "#f2e6de",
+                        "surface-tint": "#9d422a",
+                        "on-secondary-fixed-variant": "#2f4d34",
+                        "on-background": "#201a16",
+                        "surface-dim": "#e4d8d0",
+                        "inverse-surface": "#362f2a",
+                        "on-surface-variant": "#56423d",
+                        "primary-container": "#a3472e",
+                        "secondary-fixed-dim": "#adcfae",
+                        "tertiary-fixed": "#e6e2dd",
+                        "surface": "#fff8f5",
+                        "primary-fixed": "#ffdbd1",
+                        "surface-container-low": "#fef1ea",
+                        "tertiary-fixed-dim": "#c9c6c1",
+                        "tertiary": "#4d4b48",
+                        "secondary": "#47664b",
+                        "background": "#fff8f5",
+                        "surface-container-highest": "#ede0d9",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#fbeee7",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#dcc1ba",
+                        "surface-container": "#f8ebe4",
+                        "on-primary-container": "#ffd8ce",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "surface-bright": "#fff8f5",
+                        "on-secondary-fixed": "#03210c",
+                        "inverse-primary": "#ffb5a1",
+                        "primary-fixed-dim": "#ffb5a1",
+                        "on-surface": "#201a16",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#843019"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "3xl": "1.5rem",
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "container-max": "1200px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "section": "96px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .organic-shape {
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+        }
+        .text-shadow-sm {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="bg-background/90 dark:bg-background/90 backdrop-blur-md docked full-width top-0 sticky z-50 bg-background/80 dark:bg-background/80 border-b border-outline-variant/30 flat no shadows">
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+           <a class="text-headline-lg font-headline-lg text-primary dark:text-inverse-primary tracking-tight" href="../accueil_chez_saveur/code.html">Chez Saveur</a>
+
+
+    <nav class="hidden md:flex items-center gap-2 lg:gap-4">
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../accueil_chez_saveur/code.html">Accueil</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../menu_chez_saveur_1/code.html">Menu</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../sp_cialit_s_chez_saveur_1/code.html">Spécialités</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../r_servation_chez_saveur_1/code.html">Réservation</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../commande_en_ligne_chez_saveur_1/code.html">Commande</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../galerie_chez_saveur/code.html">Galerie</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../v_nements_offres_chez_saveur/code.html">Événements</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../avis_clients_chez_saveur/code.html">Avis</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../propos_chez_saveur_1/code.html">À Propos</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../contact_chez_saveur/code.html">Contact</a>
+</nav>
+<!-- 
+    <div class="hidden lg:flex gap-4 items-center">
+      <button class="font-label-sm text-label-sm text-primary hover:text-primary-container transition-colors uppercase" onclick="window.location.href='../commande_en_ligne_chez_saveur_1/code.html'">Commander</button>
+      <button class="bg-primary text-on-primary font-label-sm text-label-sm uppercase px-6 py-3 rounded-full hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/20 transition-all duration-300" onclick="window.location.href='../r_servation_chez_saveur_1/code.html'">Réserver une table</button>
+    </div> -->
+
+    <button class="md:hidden text-primary">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+    </button>
+  </div>
+</header>
+<main class="pb-section">
+<!-- Hero Section -->
+<section class="pt-16 md:pt-24 pb-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center relative">
+<div class="absolute inset-0 bg-surface-container opacity-50 -z-10 rounded-b-3xl organic-shape scale-110 translate-y-[-20%] blur-3xl"></div>
+<h1 class="font-display-lg text-display-lg text-primary mb-6">Our Menu</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Discover the vibrant flavors of Fianarantsoa. Each dish is crafted with fresh, local ingredients and Malagasy passion.</p>
+</section>
+<!-- Menu Content -->
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-section">
+<!-- 1. Entrées -->
+<section>
+<div class="flex items-center gap-4 mb-12">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background italic">Entrées</h2>
+<div class="h-px bg-outline-variant flex-grow opacity-50"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter items-start">
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm shadow-primary/5 hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Salade fraîche</h3>
+<span class="font-label-sm text-label-sm text-primary">12,000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Crisp local greens, tomatoes, and a light vinaigrette.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm shadow-primary/5 hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Soupe du chef</h3>
+<span class="font-label-sm text-label-sm text-primary">15,000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Rich and comforting soup made with seasonal vegetables.</p>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl shadow-sm shadow-primary/5 hover:shadow-md transition-shadow flex flex-col h-full">
+<div class="relative h-48 rounded-t-2xl overflow-hidden">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="Golden, crispy homemade samosas piled high on a rustic ceramic plate, resting on a textured wooden table. Soft, natural light highlights the flaky crust. Modern organic style, warm earthy tones." src="https://lh3.googleusercontent.com/aida/AP1WRLu4E9Smb6Wa_rBI9MiiTdPA-XohEDbtSztLsJshCjuOULtQtV9ErwhDR1nKU485_PrHPWAEcmVgtxwdZJ1J1eKbAkYZ49k9styIjalBQHiaLW3yr1-EIQlfA-mxV4D_zgJXNM94wYbe9pdshsauUnL4PymDIaFaHOmRqa4sriXO935dgvdKtUDoL6Jjc0DOyP6_oIwx0pMA5GAOQUgwtjYS9cBkaR-VW9lVm_0_2Rg-lfEWMKljYCfHQwJp3MdGOsWn1ukJZh4czg"/>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Samoussa maison</h3>
+<span class="font-label-sm text-label-sm text-primary">10,000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Crispy pastry filled with spiced meat or vegetables.</p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-sm shadow-primary/5 hover:shadow-md transition-shadow relative overflow-hidden group">
+<div class="flex justify-between items-baseline mb-2">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Salade de légumes</h3>
+<span class="font-label-sm text-label-sm text-primary">14,000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">A vibrant mix of roasted and raw market vegetables.</p>
+</div>
+</div>
+</section>
+<!-- 2. Plats principaux -->
+<section>
+<div class="flex items-center gap-4 mb-12 flex-row-reverse">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background italic">Plats Principaux</h2>
+<div class="h-px bg-outline-variant flex-grow opacity-50"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+<div class="flex flex-col md:flex-row bg-surface-container-lowest rounded-2xl shadow-sm shadow-primary/5 hover:shadow-md transition-shadow overflow-hidden group">
+<div class="md:w-2/5 h-64 md:h-auto relative">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A beautifully plated grilled chicken breast with a smoky char, served alongside a colorful array of roasted vegetables on a clean white artisanal plate. Top-down view, soft natural lighting." src="https://lh3.googleusercontent.com/aida/AP1WRLvl4ucUIAI_-8--XilAKIl_eFAihQyryXl43Kxbd_00PbSFnWiX0oSZluAapdkWl0calS15rFd51QDPqn3fWMAHUSKwslKEa1lTgJVM0_4YJ4KtX03ss8_wfa9JEp5-bv-77cwa1kHE1vUvA5WMJfjgviiHvo2CZS4-jJN1Ug11tqrMdaI5SUwDq0cuhARASQ27XvdYm9FX3nDzwH42iDAj-oswXzN1jZ797crCH8Kn9vNUF9q5DfKpP8g-uzqyjLdH-o0RPDop"/>
+</div>
+<div class="p-6 md:w-3/5 flex flex-col justify-center">
+<div class="flex justify-between items-baseline mb-2 border-b border-outline-variant/30 pb-2">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Poulet grillé</h3>
+<span class="font-label-sm text-label-sm text-primary">25,000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Succulent grilled chicken marinated in local herbs and spices.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row-reverse bg-surface-container-lowest rounded-2xl shadow-sm shadow-primary/5 hover:shadow-md transition-shadow overflow-hidden group">
+<div class="md:w-2/5 h-64 md:h-auto relative">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A juicy, thick-cut steak cooked medium-rare, resting on a wooden cutting board next to a generous pile of golden, hand-cut fries. Warm, inviting lighting, rustic yet refined aesthetic." src="https://lh3.googleusercontent.com/aida/AP1WRLsn_lvkKAaHryIhM2aVLsVgp28bjQ-X5sIB5EQ2vJMFLpvn64EyJk0hHOQRWOh0pRdj_68e95X_NIcOhr11BkpEcyAr6K90qRVksp81V744bXz6yWdLiilGD75AFz5tzw6zCirz6ojFdH0cxDaHRUdtJIYRSEgK1SQ2Bi1z5k0t7EzO33RC9P3bbKtYnQIqQKfIAzHdBjLgVrg3rIO8M1gttDFsz2fS8v4ZfD3CyHSERQxGRoL8GX8eruud-kxA17_NUdsPlFcY1g"/>
+</div>
+<div class="p-6 md:w-3/5 flex flex-col justify-center">
+<div class="flex justify-between items-baseline mb-2 border-b border-outline-variant/30 pb-2">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Steak frites</h3>
+<span class="font-label-sm text-label-sm text-primary">35,000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Classic steak cooked to your liking, served with crispy fries.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row bg-surface-container-lowest rounded-2xl shadow-sm shadow-primary/5 hover:shadow-md transition-shadow overflow-hidden group">
+<div class="md:w-2/5 h-64 md:h-auto relative">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A whole grilled fish, elegantly presented on an elongated ceramic platter, garnished with fresh herbs and citrus slices. Bright, clean background, emphasizing the freshness of the seafood." src="https://lh3.googleusercontent.com/aida/AP1WRLso5dWDNk_U9Im6kGmNjD8qs2CSn4Km92dLxjrNqrWLbaQ8ZCfPE86rTTIVneiVASWRjOmJiMPfArpZReO8Oj69VgQHf59zAMxxB49Bkwv0rEJFg5wnV-YRcL5UX8IZxnfG4QVcqMFpY94E57jqj6wYuPDs9Msg_6JKReP-YmlzxU-8tCeJlqKux8tzGY8CcewtoxloapBR83tKWIILrSBB2ieJINJmEKtoDGsBTuMYY5CKH2Wo2khpzNHBahycYrwh62iE7Cpz"/>
+</div>
+<div class="p-6 md:w-3/5 flex flex-col justify-center">
+<div class="flex justify-between items-baseline mb-2 border-b border-outline-variant/30 pb-2">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Poisson grillé</h3>
+<span class="font-label-sm text-label-sm text-primary">28,000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Fresh catch of the day, perfectly grilled with a hint of lemon.</p>
+</div>
+</div>
+<div class="flex flex-col md:flex-row-reverse bg-surface-container-lowest rounded-2xl shadow-sm shadow-primary/5 hover:shadow-md transition-shadow overflow-hidden group">
+<div class="md:w-2/5 h-64 md:h-auto relative">
+<div class="bg-cover bg-center w-full h-full group-hover:scale-105 transition-transform duration-500" data-alt="A steaming bowl of rich, hearty Spaghetti Bolognese, topped with grated parmesan and fresh basil, set on a textured cream tablecloth. Warm, appetizing light, rustic Italian aesthetic." style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')"></div>
+</div>
+<div class="p-6 md:w-3/5 flex flex-col justify-center">
+<div class="flex justify-between items-baseline mb-2 border-b border-outline-variant/30 pb-2">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Spaghetti bolognaise</h3>
+<span class="font-label-sm text-label-sm text-primary">22,000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Traditional slow-cooked meat sauce tossed with al dente spaghetti.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Desserts -->
+<section>
+<div class="flex items-center gap-4 mb-12">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background italic">Desserts</h2>
+<div class="h-px bg-outline-variant flex-grow opacity-50"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter">
+<div class="group cursor-pointer">
+<div class="relative h-48 md:h-64 rounded-2xl overflow-hidden mb-4 shadow-sm shadow-primary/5">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="A delicate, perfectly folded chocolate crepe on a light-colored dessert plate, drizzled with glossy chocolate sauce and a dusting of powdered sugar. Soft, elegant lighting." src="https://lh3.googleusercontent.com/aida/AP1WRLsSAhA8Hj4ELC80hWej-vELAsu26cinM4j9u20swzlfMoiD2Xt8AjPjQKCDuTfYK_9TUWGqJ1tSJlk1L5gwnC5tLZeyTWPh5UkZVDXAkBFu7tXrt9wyB3hdbzAJk_6eTczyYJxVaQHs9wemxprk-H2J8DqVuTELwyeQHLnnvSuO8LFmX0hoifWA2-_1P1GZ60emzHZH8nl99K6Hqe0DloQaX-fhQBFOQXu7I3LKPnD34kd5MYqhjFbD_KhAusyrXnqhurNu699IPw"/>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-center mb-1">Crêpe au chocolat</h3>
+<p class="font-label-sm text-label-sm text-primary text-center">12,000 Ar</p>
+</div>
+<div class="group cursor-pointer">
+<div class="relative h-48 md:h-64 rounded-2xl overflow-hidden mb-4 shadow-sm shadow-primary/5">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="A vibrant, colorful bowl of freshly cut fruit salad, featuring tropical fruits like mango, pineapple, and papaya, glistening in natural sunlight. Clean, refreshing aesthetic." src="https://lh3.googleusercontent.com/aida/AP1WRLstVeU6Hb8GP2CGCi4XzUvTOcC6XbBjaAkbKVoPHuyzLCyXkb2roZdDzp_PxAeVrxaszFv6HCVVgTlxEFJV4EGRlwLxq8tShmQZxj7CeA0I0GgxuXOHofQQ9fMigExRfFW0kikdHP9gC6JNwuva7HaYQ7pgVsZfdxFiP5gq0YzNmr7V1rVeW_X1pSZkSRgnNU7zHl5PgbeY-I3UpFml7Ck-Gocug-mCO4fmT9deSz2PWNCN1sv3aY5r45LbEk1CpksBYrhybBPgQA"/>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-center mb-1">Salade de fruits</h3>
+<p class="font-label-sm text-label-sm text-primary text-center">10,000 Ar</p>
+</div>
+<div class="group cursor-pointer">
+<div class="relative h-48 md:h-64 rounded-2xl overflow-hidden mb-4 shadow-sm shadow-primary/5">
+<img class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700" data-alt="Three elegant scoops of artisanal ice cream in a classic glass sundae dish, resting on a dark slate surface. Soft, moody lighting emphasizing the creamy texture." src="https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg"/>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-center mb-1">Glace</h3>
+<p class="font-label-sm text-label-sm text-primary text-center">8,000 Ar</p>
+</div>
+<div class="group cursor-pointer">
+<div class="relative h-48 md:h-64 rounded-2xl overflow-hidden mb-4 shadow-sm shadow-primary/5 bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-outline text-6xl opacity-20">cake</span>
+</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface text-center mb-1">Gâteau maison</h3>
+<p class="font-label-sm text-label-sm text-primary text-center">15,000 Ar</p>
+</div>
+</div>
+</section>
+<!-- 4. Boissons -->
+<section class="bg-surface-container rounded-3xl p-8 md:p-12 relative overflow-hidden">
+<div class="absolute -right-24 -top-24 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="absolute -left-24 -bottom-24 w-64 h-64 bg-secondary-container/30 rounded-full blur-3xl"></div>
+<div class="flex items-center gap-4 mb-10 relative z-10">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-background italic">Boissons</h2>
+<div class="h-px bg-outline-variant flex-grow opacity-50"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+<ul class="space-y-4">
+</ul></div></section></div></main></body></html>

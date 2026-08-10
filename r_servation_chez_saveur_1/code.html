@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="stylesheet" href="../style.css">
+<title>Réservation - CHEZ SAVEUR</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Be+Vietnam+Pro:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#93000a",
+                        "on-secondary-container": "#4c6c50",
+                        "surface-variant": "#ede0d9",
+                        "tertiary-container": "#65635f",
+                        "on-primary-fixed": "#3c0800",
+                        "secondary-container": "#c8ecc9",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#e3e0db",
+                        "on-tertiary-fixed-variant": "#484743",
+                        "secondary-fixed": "#c8ecc9",
+                        "outline": "#89726c",
+                        "on-primary": "#ffffff",
+                        "on-primary-fixed-variant": "#7e2c15",
+                        "surface-container-high": "#f2e6de",
+                        "surface-tint": "#9d422a",
+                        "on-secondary-fixed-variant": "#2f4d34",
+                        "on-background": "#201a16",
+                        "surface-dim": "#e4d8d0",
+                        "inverse-surface": "#362f2a",
+                        "on-surface-variant": "#56423d",
+                        "primary-container": "#a3472e",
+                        "secondary-fixed-dim": "#adcfae",
+                        "tertiary-fixed": "#e6e2dd",
+                        "surface": "#fff8f5",
+                        "primary-fixed": "#ffdbd1",
+                        "surface-container-low": "#fef1ea",
+                        "tertiary-fixed-dim": "#c9c6c1",
+                        "tertiary": "#4d4b48",
+                        "secondary": "#47664b",
+                        "background": "#fff8f5",
+                        "surface-container-highest": "#ede0d9",
+                        "error-container": "#ffdad6",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#fbeee7",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#dcc1ba",
+                        "surface-container": "#f8ebe4",
+                        "on-primary-container": "#ffd8ce",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "surface-bright": "#fff8f5",
+                        "on-secondary-fixed": "#03210c",
+                        "inverse-primary": "#ffb5a1",
+                        "primary-fixed-dim": "#ffb5a1",
+                        "on-surface": "#201a16",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#843019"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "3xl": "1.5rem",
+                    },
+                    "spacing": {
+                        "unit": "8px",
+                        "margin-desktop": "64px",
+                        "container-max": "1200px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "section": "96px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Be Vietnam Pro"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "display-lg": ["Libre Caslon Text"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .organic-shape {
+            border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+        }
+        .text-shadow-sm {
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- TopNavBar -->
+<header class="bg-background/90 backdrop-blur-md sticky top-0 z-50 border-b border-outline-variant/30">
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+    <a class="text-headline-lg font-headline-lg text-primary tracking-tight" href="../accueil_chez_saveur/code.html">Chez Saveur</a>
+
+    <nav class="hidden md:flex items-center gap-2 lg:gap-4">
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-container-high/50 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../accueil_chez_saveur/code.html">Accueil</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-container-high/50 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../menu_chez_saveur_1/code.html">Menu</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-container-high/50 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../sp_cialit_s_chez_saveur_1/code.html">Spécialités</a>
+      <a class="text-primary font-bold bg-surface-container-high/60 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../r_servation_chez_saveur_1/code.html">Réservation</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-container-high/50 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../commande_en_ligne_chez_saveur_1/code.html">Commande</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-container-high/50 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../galerie_chez_saveur/code.html">Galerie</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-container-high/50 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../v_nements_offres_chez_saveur/code.html">Événements</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-container-high/50 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../avis_clients_chez_saveur/code.html">Avis</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-container-high/50 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../propos_chez_saveur_1/code.html">À Propos</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors duration-300 hover:bg-surface-container-high/50 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../contact_chez_saveur/code.html">Contact</a>
+    </nav>
+
+    <button class="md:hidden text-primary">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</header>
+
+<main class="pb-section">
+  <!-- Hero Section -->
+  <section class="pt-16 md:pt-24 pb-12 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center relative">
+    <div class="absolute inset-0 bg-surface-container opacity-50 -z-10 rounded-b-3xl organic-shape scale-110 translate-y-[-20%] blur-3xl"></div>
+    <h1 class="font-display-lg text-display-lg text-primary mb-6">Réserver une Table</h1>
+    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+      Assurez-vous d'avoir la meilleure table pour vos repas en famille, rendez-vous ou repas d'affaires à Fianarantsoa.
+    </p>
+  </section>
+
+  <!-- Reservation Section -->
+  <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Reservation Form Card -->
+      <div class="lg:col-span-8 bg-surface-container-lowest rounded-3xl p-6 md:p-10 shadow-sm shadow-primary/10 border border-outline-variant/30">
+        <div class="flex items-center gap-3 mb-8">
+          <span class="material-symbols-outlined text-primary text-3xl">table_restaurant</span>
+          <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Formulaire de Réservation</h2>
+        </div>
+
+        <form action="#" method="POST" class="space-y-6" onsubmit="event.preventDefault(); alert('Votre demande de réservation a été envoyée avec succès ! Notre équipe vous contactera pour confirmer.');">
+          <!-- Information Personnelle -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="fullname" class="block font-label-sm text-label-sm text-on-surface mb-2">Nom Complet *</label>
+              <div class="relative">
+                <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">person</span>
+                <input type="text" id="fullname" name="fullname" required placeholder="Ex: Jean Rabe" 
+                       class="w-full pl-12 pr-4 py-3 rounded-xl border border-outline-variant bg-surface-container-low focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-on-surface font-body-md" />
+              </div>
+            </div>
+
+            <div>
+              <label for="phone" class="block font-label-sm text-label-sm text-on-surface mb-2">Téléphone *</label>
+              <div class="relative">
+                <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">call</span>
+                <input type="tel" id="phone" name="phone" required placeholder="034 00 000 00" 
+                       class="w-full pl-12 pr-4 py-3 rounded-xl border border-outline-variant bg-surface-container-low focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-on-surface font-body-md" />
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="email" class="block font-label-sm text-label-sm text-on-surface mb-2">Adresse E-mail</label>
+              <div class="relative">
+                <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">mail</span>
+                <input type="email" id="email" name="email" placeholder="votre.email@exemple.mg" 
+                       class="w-full pl-12 pr-4 py-3 rounded-xl border border-outline-variant bg-surface-container-low focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-on-surface font-body-md" />
+              </div>
+            </div>
+
+            <div>
+              <label for="guests" class="block font-label-sm text-label-sm text-on-surface mb-2">Nombre de Personnes *</label>
+              <div class="relative">
+                <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">group</span>
+                <select id="guests" name="guests" required 
+                        class="w-full pl-12 pr-4 py-3 rounded-xl border border-outline-variant bg-surface-container-low focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-on-surface font-body-md appearance-none">
+                  <option value="1">1 Personne</option>
+                  <option value="2" selected>2 Personnes</option>
+                  <option value="3">3 Personnes</option>
+                  <option value="4">4 Personnes</option>
+                  <option value="5">5 Personnes</option>
+                  <option value="6">6 Personnes</option>
+                  <option value="7+">7+ Personnes (Groupe / Événement)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Date et Heure -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="date" class="block font-label-sm text-label-sm text-on-surface mb-2">Date *</label>
+              <div class="relative">
+                <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">calendar_today</span>
+                <input type="date" id="date" name="date" required 
+                       class="w-full pl-12 pr-4 py-3 rounded-xl border border-outline-variant bg-surface-container-low focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-on-surface font-body-md" />
+              </div>
+            </div>
+
+            <div>
+              <label for="time" class="block font-label-sm text-label-sm text-on-surface mb-2">Heure *</label>
+              <div class="relative">
+                <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">schedule</span>
+                <select id="time" name="time" required 
+                        class="w-full pl-12 pr-4 py-3 rounded-xl border border-outline-variant bg-surface-container-low focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-on-surface font-body-md appearance-none">
+                  <option value="" disabled selected>Choisissez un horaire</option>
+                  <optgroup label="Déjeuner">
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                  </optgroup>
+                  <optgroup label="Dîner">
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Choix d'emplacement -->
+          <div>
+            <label class="block font-label-sm text-label-sm text-on-surface mb-2">Préférence d'Emplacement</label>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <label class="flex items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container-low hover:bg-surface-container-high/50 cursor-pointer transition-colors">
+                <input type="radio" name="seating" value="interieur" checked class="text-primary focus:ring-primary" />
+                <span class="font-body-md text-on-surface">Salle Intérieure</span>
+              </label>
+              <label class="flex items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container-low hover:bg-surface-container-high/50 cursor-pointer transition-colors">
+                <input type="radio" name="seating" value="terrasse" class="text-primary focus:ring-primary" />
+                <span class="font-body-md text-on-surface">Terrasse</span>
+              </label>
+              <label class="flex items-center gap-3 p-4 rounded-xl border border-outline-variant bg-surface-container-low hover:bg-surface-container-high/50 cursor-pointer transition-colors">
+                <input type="radio" name="seating" value="prive" class="text-primary focus:ring-primary" />
+                <span class="font-body-md text-on-surface">Salon Privé</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Remarques ou demandes spéciales -->
+          <div>
+            <label for="notes" class="block font-label-sm text-label-sm text-on-surface mb-2">Demandes Spéciales / Allergies</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Mentionnez ici un anniversaire, une allergie alimentaire ou tout besoin particulier..." 
+                      class="w-full p-4 rounded-xl border border-outline-variant bg-surface-container-low focus:bg-surface-container-lowest focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all text-on-surface font-body-md resize-none"></textarea>
+          </div>
+
+          <!-- Bouton de validation -->
+          <button type="submit" 
+                  class="w-full bg-primary hover:bg-primary-container text-on-primary font-label-sm text-label-sm uppercase tracking-wider py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:shadow-primary/20 flex items-center justify-center gap-2">
+            <span class="material-symbols-outlined">check_circle</span>
+            Confirmer ma Réservation
+          </button>
+        </form>
+      </div>
+
+      <!-- Information Side Sidebar -->
+      <div class="lg:col-span-4 space-y-6">
+        <!-- Horaires -->
+        <div class="bg-surface-container rounded-3xl p-6 md:p-8 relative overflow-hidden">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-primary text-2xl">schedule</span>
+            <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Horaires d'Ouverture</h3>
+          </div>
+          <ul class="space-y-4 font-body-md text-on-surface-variant">
+            <li class="flex justify-between border-b border-outline-variant/30 pb-2">
+              <span>Lundi - Jeudi</span>
+              <span class="font-semibold text-on-surface">10:00 - 21:30</span>
+            </li>
+            <li class="flex justify-between border-b border-outline-variant/30 pb-2">
+              <span>Vendredi - Samedi</span>
+              <span class="font-semibold text-on-surface">10:00 - 22:30</span>
+            </li>
+            <li class="flex justify-between pb-2">
+              <span>Dimanche</span>
+              <span class="font-semibold text-on-surface">11:00 - 21:00</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact & Localisation -->
+        <div class="bg-surface-container-lowest rounded-3xl p-6 md:p-8 border border-outline-variant/30 shadow-sm">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-primary text-2xl">location_on</span>
+            <h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Nous Trouver</h3>
+          </div>
+          <p class="font-body-md text-on-surface-variant mb-4">
+            <strong>CHEZ SAVEUR</strong><br/>
+            Centre-ville, Fianarantsoa, Madagascar
+          </p>
+          <div class="space-y-3 font-body-md text-on-surface-variant">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">phone</span>
+              <span>+261 34 00 000 00</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-primary">mail</span>
+              <span>contact@chezsaveur.mg</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Important Note -->
+        <div class="bg-secondary-container/40 text-on-secondary-container rounded-3xl p-6 border border-secondary/20">
+          <div class="flex items-start gap-3">
+            <span class="material-symbols-outlined text-secondary mt-1">info</span>
+            <div>
+              <h4 class="font-bold mb-1">Information Importante</h4>
+              <p class="text-sm">
+                Pour toute réservation de groupe de plus de 8 personnes ou événements spéciaux, merci de nous contacter directement par téléphone au moins 24h à l'avance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+</body>
+</html>

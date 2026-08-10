@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="stylesheet" href="../style.css">
+<title>Contact - Chez Saveur</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&amp;family=Libre+Caslon+Text:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#843019",
+                      "surface-container-highest": "#ede0d9",
+                      "secondary-fixed": "#c8ecc9",
+                      "secondary": "#47664b",
+                      "error-container": "#ffdad6",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#484743",
+                      "surface-bright": "#fff8f5",
+                      "surface-container-high": "#f2e6de",
+                      "on-tertiary-container": "#e3e0db",
+                      "outline-variant": "#dcc1ba",
+                      "inverse-primary": "#ffb5a1",
+                      "tertiary-container": "#65635f",
+                      "on-secondary-container": "#4c6c50",
+                      "inverse-on-surface": "#fbeee7",
+                      "surface": "#fff8f5",
+                      "surface-variant": "#ede0d9",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed-variant": "#2f4d34",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#c9c6c1",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-container": "#c8ecc9",
+                      "on-background": "#201a16",
+                      "primary-container": "#a3472e",
+                      "primary-fixed-dim": "#ffb5a1",
+                      "on-surface": "#201a16",
+                      "surface-tint": "#9d422a",
+                      "on-primary-container": "#ffd8ce",
+                      "surface-container": "#f8ebe4",
+                      "surface-dim": "#e4d8d0",
+                      "on-secondary-fixed": "#03210c",
+                      "tertiary": "#4d4b48",
+                      "inverse-surface": "#362f2a",
+                      "tertiary-fixed": "#e6e2dd",
+                      "on-primary-fixed-variant": "#7e2c15",
+                      "on-error": "#ffffff",
+                      "error": "#ba1a1a",
+                      "outline": "#89726c",
+                      "primary-fixed": "#ffdbd1",
+                      "secondary-fixed-dim": "#adcfae",
+                      "on-primary-fixed": "#3c0800",
+                      "on-surface-variant": "#56423d",
+                      "surface-container-low": "#fef1ea",
+                      "background": "#fff8f5",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-lg-mobile": [
+                              "Libre Caslon Text"
+                      ],
+                      "label-sm": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-lg": [
+                              "Libre Caslon Text"
+                      ],
+                      "body-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "display-lg": [
+                              "Libre Caslon Text"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        
+        /* Subtle organic pattern overlay */
+        .lamba-pattern {
+            background-image: radial-gradient(var(--tw-colors-primary) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.03;
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col relative overflow-x-hidden">
+<!-- Decorative background element -->
+<div class="fixed inset-0 pointer-events-none z-0 lamba-pattern"></div>
+<div class="fixed top-[-20%] left-[-10%] w-[50%] h-[50%] rounded-full bg-surface-container-high blur-[120px] -z-10"></div>
+<div class="fixed bottom-[-20%] right-[-10%] w-[60%] h-[60%] rounded-full bg-surface-container blur-[150px] -z-10"></div>
+<!-- TopNavBar -->
+<header class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md sticky top-0 full-width z-50 shadow-sm dark:shadow-none bg-transparent">
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+            <a class="text-headline-lg font-headline-lg text-primary dark:text-inverse-primary tracking-tight" href="../accueil_chez_saveur/code.html">Chez Saveur</a>
+
+
+   <nav class="hidden md:flex items-center gap-2 lg:gap-4">
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../accueil_chez_saveur/code.html">Accueil</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../menu_chez_saveur_1/code.html">Menu</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../sp_cialit_s_chez_saveur_1/code.html">Spécialités</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../r_servation_chez_saveur_1/code.html">Réservation</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../commande_en_ligne_chez_saveur_1/code.html">Commande</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../galerie_chez_saveur/code.html">Galerie</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../v_nements_offres_chez_saveur/code.html">Événements</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../avis_clients_chez_saveur/code.html">Avis</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../propos_chez_saveur_1/code.html">À Propos</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../contact_chez_saveur/code.html">Contact</a>
+</nav>
+<!-- 
+    <button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full text-label-sm font-label-sm hover:-translate-y-0.5 transition-transform shadow-sm shadow-primary/20" onclick="window.location.href='../r_servation_chez_saveur_1/code.html'">
+      Réserver une table
+    </button> -->
+
+    <button class="md:hidden text-primary p-2">
+      <span class="material-symbols-outlined" data-icon="menu">menu</span>
+    </button>
+  </div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-[80px] md:py-[120px]">
+<!-- Page Header -->
+<div class="text-center mb-16 md:mb-24">
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Venez Nous Rencontrer</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Nichés au cœur de Fianarantsoa, nous sommes prêts à vous accueillir pour une expérience culinaire inoubliable, où tradition malgache et modernité se rencontrent.
+            </p>
+</div>
+<!-- Contact Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-unit md:gap-gutter">
+<!-- Info Card (Glassmorphism & Organic Feel) -->
+<div class="md:col-span-5 bg-surface-container-lowest/80 backdrop-blur-sm rounded-[2rem] p-8 md:p-12 shadow-[0_8px_30px_rgb(132,48,25,0.05)] flex flex-col justify-center relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-fixed opacity-20 rounded-full blur-2xl -mr-16 -mt-16"></div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Informations Pratiques</h2>
+<div class="space-y-8">
+<!-- Address -->
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<div>
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Adresse</h3>
+<p class="font-body-md text-body-md text-on-background">
+                                12 Rue de l'Héritage<br/>
+                                Quartier Haute-Ville<br/>
+                                Fianarantsoa, Madagascar
+                            </p>
+</div>
+</div>
+<!-- Contact -->
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<div>
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-1 uppercase tracking-wider">Contact</h3>
+<p class="font-body-md text-body-md text-on-background">
+                                +261 34 00 000 00<br/>
+<a class="text-primary hover:underline decoration-primary underline-offset-4 transition-all" href="mailto:contact@chezsaveur.mg">contact@chezsaveur.mg</a>
+</p>
+</div>
+</div>
+<!-- Hours -->
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+</div>
+<div class="w-full">
+<h3 class="font-label-sm text-label-sm text-on-surface-variant mb-2 uppercase tracking-wider">Horaires</h3>
+<ul class="space-y-2 font-body-md text-body-md text-on-background">
+<li class="flex justify-between border-b border-outline-variant/30 pb-1">
+<span>Lundi - Jeudi</span>
+<span class="text-on-surface-variant">11h00 - 22h00</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/30 pb-1">
+<span>Vendredi - Samedi</span>
+<span class="text-primary font-medium">11h00 - 23h30</span>
+</li>
+<li class="flex justify-between pt-1">
+<span>Dimanche</span>
+<span class="text-on-surface-variant">10h00 - 16h00 (Brunch)</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Socials -->
+<div class="mt-12 pt-8 border-t border-outline-variant/30 flex gap-4">
+<a class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span> <!-- Using public as a generic social icon placeholder since brand icons aren't standard material -->
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="photo_camera">photo_camera</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-fixed text-primary flex items-center justify-center hover:bg-primary hover:text-on-primary transition-colors duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="videocam">videocam</span>
+</a>
+</div>
+</div>
+<!-- Visual / Image Card -->
+<div class="md:col-span-7 rounded-[2rem] overflow-hidden relative h-[400px] md:h-auto shadow-[0_8px_30px_rgb(132,48,25,0.08)] group">
+<!-- Using the requested specific image placeholder -->
+<img alt="Boisson fraîche chez Saveur" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOIFMeyHFEM50qkHjYY_wJK0-HCxICnp-mRicSyrPBZceMu64S486jv_6tz7JLgBQDZtLrhhBII16IyW_wityGJMteBjxLZ8EaSIeOIAa4Q0TVY5XFBYHvR0y6k1diIkPdZuNHQFqkkEzknAqvIRAgNVM_XgdErWlyX7xgaoQlPli2nmr58AXoQOm0pJMdq0Otfi8KNIVDkW71VttC1CZ46HzmtYAdIslcipjBWtrTNal7m5OUuAdEgGDJnAD9EU0Zcw"/>
+<!-- Overlay for elegance -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest/80 via-transparent to-transparent opacity-60"></div>
+<div class="absolute bottom-8 left-8 right-8">
+<span class="inline-block px-3 py-1 bg-surface-container-lowest/90 backdrop-blur-md rounded-full font-label-sm text-label-sm text-primary mb-3">L'Art de la Table</span>
+<p class="font-headline-lg-mobile text-headline-lg-mobile text-surface-container-lowest shadow-sm">Un cadre chaleureux pour éveiller vos sens.</p>
+</div>
+</div>
+<!-- Map Card (Full Width Bottom) -->
+<div class="md:col-span-12 rounded-[2rem] h-[300px] bg-surface-container-high overflow-hidden relative shadow-[0_8px_30px_rgb(132,48,25,0.05)] mt-4">
+<img alt="Carte de Fianarantsoa" class="w-full h-full object-cover opacity-80" data-alt="A beautifully stylized, minimalist, light-mode map illustration of Fianarantsoa, Madagascar. The map uses a soft cream background with subtle terracotta and deep green line weights for roads and landmarks, matching a modern organic aesthetic. No text labels, just clean geometric and curving organic lines representing the hilly terrain and city streets." data-location="Fianarantsoa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC02KPSmnsDv68DurvZt-YHsnl3wvURAeDA0F8ZKPTPOaJs5eVY6hV4SdAOn8SHM8IPexzBp02WUqkTPxeH8eDP1yDCLWiUTBnHwCuqUW0u65RrOeDtu9RW6K7yho9julT33OpWHw3uQhl2tUDK_YTNTwCaMG3e3mZE2KWo6T4VCivn3D4d_o7DgAOE-qx04mYn7OkY5E2kb0fdoRosPoH3mngxoZDRfAxISms-F2Qc1k9PbzzOFIEY"/>
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center shadow-lg shadow-primary/30 mb-2 animate-bounce">
+<span class="material-symbols-outlined text-3xl" data-icon="restaurant" data-weight="fill">restaurant</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface full-width bg-surface-container-low dark:bg-inverse-surface mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full max-w-container-max mx-auto">
+<!-- Brand Column -->
+<div class="md:col-span-1 flex flex-col gap-4">
+<div class="text-headline-lg font-headline-lg text-primary dark:text-primary-fixed-dim">
+                    Chez Saveur
+                </div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Passion Culinaire &amp; Héritage.
+                </p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-4 opacity-80">
+                    © 2024 Chez Saveur. Passion Culinaire &amp; Héritage.
+                </p>
+</div>
+<!-- Spacer for grid layout -->
+<div class="hidden md:block"></div>
+<!-- Links Column -->
+<div class="md:col-span-2 flex flex-col md:flex-row gap-8 md:justify-end">
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2">Légal</h4>
+<a class="text-body-md font-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="#">Politique de confidentialité</a>
+<a class="text-body-md font-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="#">Conditions d'utilisation</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-label-sm text-label-sm text-primary uppercase tracking-wider mb-2">Connecter</h4>
+<a class="text-body-md font-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="../contact_chez_saveur/code.html">Contact</a>
+<a class="text-body-md font-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="#">Presse</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

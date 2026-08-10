@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="stylesheet" href="../style.css">
+<title>Commande en Ligne - Chez Saveur</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Libre+Caslon+Text:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "primary": "#843019",
+                      "surface-container-highest": "#ede0d9",
+                      "secondary-fixed": "#c8ecc9",
+                      "secondary": "#47664b",
+                      "error-container": "#ffdad6",
+                      "on-secondary": "#ffffff",
+                      "on-tertiary-fixed-variant": "#484743",
+                      "surface-bright": "#fff8f5",
+                      "surface-container-high": "#f2e6de",
+                      "on-tertiary-container": "#e3e0db",
+                      "outline-variant": "#dcc1ba",
+                      "inverse-primary": "#ffb5a1",
+                      "tertiary-container": "#65635f",
+                      "on-secondary-container": "#4c6c50",
+                      "inverse-on-surface": "#fbeee7",
+                      "surface": "#fff8f5",
+                      "surface-variant": "#ede0d9",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-fixed-variant": "#2f4d34",
+                      "on-tertiary-fixed": "#1c1c19",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed-dim": "#c9c6c1",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary-container": "#c8ecc9",
+                      "on-background": "#201a16",
+                      "primary-container": "#a3472e",
+                      "primary-fixed-dim": "#ffb5a1",
+                      "on-surface": "#201a16",
+                      "surface-tint": "#9d422a",
+                      "on-primary-container": "#ffd8ce",
+                      "surface-container": "#f8ebe4",
+                      "surface-dim": "#e4d8d0",
+                      "on-secondary-fixed": "#03210c",
+                      "tertiary": "#4d4b48",
+                      "inverse-surface": "#362f2a",
+                      "tertiary-fixed": "#e6e2dd",
+                      "on-primary-fixed-variant": "#7e2c15",
+                      "on-error": "#ffffff",
+                      "error": "#ba1a1a",
+                      "outline": "#89726c",
+                      "primary-fixed": "#ffdbd1",
+                      "secondary-fixed-dim": "#adcfae",
+                      "on-primary-fixed": "#3c0800",
+                      "on-surface-variant": "#56423d",
+                      "surface-container-low": "#fef1ea",
+                      "background": "#fff8f5",
+                      "on-primary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "container-max": "1200px",
+                      "margin-desktop": "64px",
+                      "unit": "8px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-lg-mobile": [
+                              "Libre Caslon Text"
+                      ],
+                      "label-sm": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-lg": [
+                              "Libre Caslon Text"
+                      ],
+                      "body-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "display-lg": [
+                              "Libre Caslon Text"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "28px",
+                              {
+                                      "lineHeight": "36px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "label-sm": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+        .filled-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Ambient subtle pattern */
+        .bg-lamba-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%23843019' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col bg-lamba-pattern">
+<!-- TopNavBar -->
+<header class="bg-background/90 dark:bg-background/90 backdrop-blur-md docked full-width top-0 sticky z-50 border-b border-outline-variant/30 flat no-shadows">
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+        <a class="text-headline-lg font-headline-lg text-primary dark:text-inverse-primary tracking-tight" href="../accueil_chez_saveur/code.html">Chez Saveur</a>
+
+
+   <nav class="hidden md:flex items-center gap-2 lg:gap-4">
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../accueil_chez_saveur/code.html">Accueil</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../menu_chez_saveur_1/code.html">Menu</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../sp_cialit_s_chez_saveur_1/code.html">Spécialités</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../r_servation_chez_saveur_1/code.html">Réservation</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../commande_en_ligne_chez_saveur_1/code.html">Commande</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../galerie_chez_saveur/code.html">Galerie</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../v_nements_offres_chez_saveur/code.html">Événements</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../avis_clients_chez_saveur/code.html">Avis</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../propos_chez_saveur_1/code.html">À Propos</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../contact_chez_saveur/code.html">Contact</a>
+</nav>
+
+    <button class="md:hidden text-primary">
+      <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+    </button>
+  </div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<header class="mb-12 text-center md:text-left">
+<h1 class="text-display-lg font-display-lg text-primary mb-4">Commande en Ligne</h1>
+<p class="text-body-lg text-on-surface-variant max-w-2xl">Découvrez nos meilleures ventes et savourez l'expérience Chez Saveur depuis le confort de votre foyer. Livraison rapide et soignée à Fianarantsoa.</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Menu Section -->
+<section class="lg:col-span-8 space-y-8">
+<h2 class="text-headline-lg font-headline-lg text-primary border-b border-surface-variant pb-2">Nos Meilleures Ventes</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Item 1 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_24px_-4px_rgba(132,48,25,0.05)] hover:shadow-[0_8px_32px_-4px_rgba(132,48,25,0.1)] transition-shadow duration-300 flex flex-col group relative">
+<div class="h-48 overflow-hidden relative rounded-t-xl">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A beautifully plated grilled chicken breast resting on a bed of seasoned rice, garnished with fresh herbs and a slice of lemon. Shot in natural, soft light emphasizing the golden crust of the chicken. Warm, modern rustic styling on a speckled ceramic plate. Top-down view." src="https://lh3.googleusercontent.com/aida-public/AB6AXuARLUNTb0JP_hFIOc75l7goc0WOKEFBjWYKWKDYQ5UxP-qY5oNDcZ3yMTRNtkoCa1ewV_EWpXEjjMvWEZpnA7FIK-aWR3iAUZ48ttVYaFcVnvTC9SZkk_InL8l7HLZRgo_zr_iCTmvQAjXgkICCF1ivt7saC70aLm2klHx5AQOpr3GRkN4OHC5R8AF1AnFlybgiMUGG-1c9_gBzoC9WGIyeVv7WZVGNfq0GV3LptQaFIs-w3xpq1wev"/>
+<div class="absolute top-2 right-2 bg-surface/90 backdrop-blur-sm px-2 py-1 rounded-full flex items-center space-x-1">
+<span class="material-symbols-outlined text-primary text-sm filled-icon" data-icon="star">star</span>
+<span class="text-label-sm font-label-sm text-primary">Populaire</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile text-on-background">Poulet Grillé Façon Chef</h3>
+<span class="text-body-lg font-body-lg font-bold text-primary whitespace-nowrap ml-4">15,000 Ar</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-4">Demi-poulet mariné aux herbes locales, grillé à la perfection. Accompagné de frites maison ou de riz parfumé.</p>
+</div>
+<button onclick="addToCart(1)" class="w-full bg-surface text-primary border border-primary hover:bg-primary hover:text-on-primary transition-colors duration-300 py-3 rounded-full font-label-sm flex items-center justify-center space-x-2">
+<span class="material-symbols-outlined" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span>Ajouter au panier</span>
+</button>
+</div>
+</article>
+<!-- Item 2 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_24px_-4px_rgba(132,48,25,0.05)] hover:shadow-[0_8px_32px_-4px_rgba(132,48,25,0.1)] transition-shadow duration-300 flex flex-col group relative">
+<div class="h-48 overflow-hidden rounded-t-xl">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A steaming bowl of rich spaghetti bolognese, generously topped with freshly grated parmesan cheese and a sprig of basil. The sauce is a deep, vibrant red. Soft, warm ambient lighting suggesting a cozy evening meal. Close-up, shallow depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_E710KIMtVMEX0CBxna8Iy3w7zECuwxaAP84o1B-aWCkCMU_TBTJqKnX2CR_hs1Scp9z-M4RabJzsLZiAW20gGZjgahJ4T1K6b7g9DG02w4HYXe3UA4g5C6JJOvdGnbLbIBS-BL5KnAnnXt76hBrXcZaNmnRRB7kgWnbpHiKYb4FwWD1O3WjUNKWlQ2pWjMBZSaSvqcsH_R2EmvADTi2fnPGn2R5KPIUU8oHDoqA0zkhtgHxUUMbr"/>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile text-on-background">Spaghetti Bolognaise</h3>
+<span class="text-body-lg font-body-lg font-bold text-primary whitespace-nowrap ml-4">12,000 Ar</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-4">Pâtes al dente nappées d'une riche sauce tomate mijotée à la viande hachée de zébu, saupoudrées de fromage.</p>
+</div>
+<button onclick="addToCart(2)" class="w-full bg-surface text-primary border border-primary hover:bg-primary hover:text-on-primary transition-colors duration-300 py-3 rounded-full font-label-sm flex items-center justify-center space-x-2">
+<span class="material-symbols-outlined" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span>Ajouter au panier</span>
+</button>
+</div>
+</article>
+<!-- Item 3 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_24px_-4px_rgba(132,48,25,0.05)] hover:shadow-[0_8px_32px_-4px_rgba(132,48,25,0.1)] transition-shadow duration-300 flex flex-col group relative">
+<div class="h-48 overflow-hidden rounded-t-xl">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A delicate, pan-seared white fish fillet with a golden-brown crust, served alongside vibrant steamed vegetables and a drizzle of creamy dill sauce. Bright, airy lighting accentuating the freshness of the ingredients on a clean white plate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYShBUQD_fO827vi6940Vkk06AXIcnMRK_rKiaaFjYJQkW2r6BvOEZji8OVS2mu2-TIeWaT9LqYSX3Ix6mdtBo-EBw9-oVaiV1NTAE93ieN3wjn6AgcJt3Hh5CM3acAhSTNrzFrBberzjTRxxwBhFrVMmNbL6xPK1Fo65DRqd6UA3zkP3RaQO9jfLiwUYvs-Q8_qjqIwaY1T-80SQ31kA0hugZLAHjxXGZKcsvTd4C0oqAJ0deN7LJ"/>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile text-on-background">Filet de Poisson au Citron</h3>
+<span class="text-body-lg font-body-lg font-bold text-primary whitespace-nowrap ml-4">18,000 Ar</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-4">Pêche du jour délicatement poêlée, sauce beurre blanc au citron, accompagnée de petits légumes croquants.</p>
+</div>
+<button onclick="addToCart(3)" class="w-full bg-surface text-primary border border-primary hover:bg-primary hover:text-on-primary transition-colors duration-300 py-3 rounded-full font-label-sm flex items-center justify-center space-x-2">
+<span class="material-symbols-outlined" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span>Ajouter au panier</span>
+</button>
+</div>
+</article>
+<!-- Item 4 -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-[0_4px_24px_-4px_rgba(132,48,25,0.05)] hover:shadow-[0_8px_32px_-4px_rgba(132,48,25,0.1)] transition-shadow duration-300 flex flex-col group relative">
+<div class="h-48 overflow-hidden rounded-t-xl">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A beautifully folded golden crêpe, generously filled with sliced strawberries and bananas, drizzled with rich dark chocolate sauce. Dusted lightly with powdered sugar. Warm, inviting lighting on a textured, earthy plate." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkJgTqFvJ3_voQ7nuFQP7eL_OxXJ_0rEukyDzRGBDnnP6vyjww5MRitwr32MIMwFz56PDgzT9I5VXJxfP9Q5knwjtHbZvCo2Eyi-RsTkeAWQJUCE-I7xTr7b8OOM2h5BeQGymCl1v51OBKzOQyYizplWN-6bec0ur4PwC-zdKukazTIwGQyDEp86Crh2xD5EGDPOFtYpkSr5RYwSYZY-UuDhD4dMClRwKaHCsahtbCPsutEHbVMuLI"/>
+</div>
+<div class="p-6 flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile text-on-background">Crêpe Gourmande</h3>
+<span class="text-body-lg font-body-lg font-bold text-primary whitespace-nowrap ml-4">8,000 Ar</span>
+</div>
+<p class="text-body-md text-on-surface-variant mb-4">Crêpe fine et moelleuse, garnie au choix de chocolat fondant, confiture locale ou fruits frais de saison.</p>
+</div>
+<button onclick="addToCart(4)" class="w-full bg-surface text-primary border border-primary hover:bg-primary hover:text-on-primary transition-colors duration-300 py-3 rounded-full font-label-sm flex items-center justify-center space-x-2">
+<span class="material-symbols-outlined" data-icon="add_shopping_cart">add_shopping_cart</span>
+<span>Ajouter au panier</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- Cart Sidebar -->
+<aside class="lg:col-span-4 mt-8 lg:mt-0">
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-[0_12px_40px_-12px_rgba(132,48,25,0.1)] sticky top-24">
+<h2 class="text-headline-lg-mobile font-headline-lg-mobile text-on-background mb-6 flex items-center">
+<span class="material-symbols-outlined mr-2 text-primary" data-icon="shopping_basket">shopping_basket</span>
+                        Votre Panier
+                    </h2>
+<!-- Dynamic Cart Items Container -->
+<div id="cart-items-container" class="space-y-4 mb-6 max-h-[409px] overflow-y-auto pr-2 scrollbar-thin">
+<!-- Content generated dynamically via JavaScript -->
+</div>
+<!-- Totals -->
+<div class="space-y-2 mb-6">
+<div class="flex justify-between text-body-md text-on-surface-variant">
+<span>Sous-total</span>
+<span id="subtotal-display">31,000 Ar</span>
+</div>
+<div class="flex justify-between text-body-md text-on-surface-variant">
+<span>Livraison (Fianarantsoa)</span>
+<span id="delivery-display">3,000 Ar</span>
+</div>
+<div class="flex justify-between text-headline-lg-mobile font-headline-lg-mobile text-primary pt-4 border-t border-surface-variant">
+<span>Total</span>
+<span id="total-display">34,000 Ar</span>
+</div>
+</div>
+<!-- Delivery Info Alert -->
+<div class="bg-surface-container flex items-start p-4 rounded-xl mb-6">
+<span class="material-symbols-outlined text-secondary mr-3 shrink-0" data-icon="info">info</span>
+<p class="text-sm text-on-surface-variant">Livraison disponible uniquement dans la zone urbaine de Fianarantsoa. Temps estimé : 30-45 minutes.</p>
+</div>
+<!-- Checkout Button -->
+<button id="checkout-btn" class="w-full bg-primary text-on-primary py-4 rounded-full font-label-sm hover:bg-primary-container transition-colors shadow-sm hover:shadow-md flex justify-center items-center space-x-2">
+<span>Valider la commande</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</aside>
+</div>
+</main>
+
+<!-- Modal Formulaire de Commande -->
+<div id="checkout-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+  <div class="bg-surface-container-lowest rounded-2xl p-6 md:p-8 max-w-lg w-full shadow-2xl relative border border-outline-variant/30">
+    <button id="close-modal" class="absolute top-4 right-4 text-on-surface-variant hover:text-primary transition-colors">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <h3 class="text-headline-lg font-headline-lg text-primary mb-2">Finaliser votre commande</h3>
+    <p class="text-body-md text-on-surface-variant mb-6">Veuillez renseigner vos coordonnées pour la livraison à Fianarantsoa.</p>
+    
+    <form id="order-form" class="space-y-4">
+      <div>
+        <label class="block text-label-sm text-on-background mb-1 font-semibold">Nom complet</label>
+        <input type="text" id="cust-name" required class="w-full px-4 py-2.5 rounded-xl border border-outline-variant bg-surface focus:outline-none focus:border-primary text-body-md" placeholder="Votre nom">
+      </div>
+      <div>
+        <label class="block text-label-sm text-on-background mb-1 font-semibold">Numéro de Téléphone</label>
+        <input type="tel" id="cust-phone" required class="w-full px-4 py-2.5 rounded-xl border border-outline-variant bg-surface focus:outline-none focus:border-primary text-body-md" placeholder="034 XX XXX XX">
+      </div>
+      <div>
+        <label class="block text-label-sm text-on-background mb-1 font-semibold">Adresse de livraison (Fianarantsoa)</label>
+        <input type="text" id="cust-address" required class="w-full px-4 py-2.5 rounded-xl border border-outline-variant bg-surface focus:outline-none focus:border-primary text-body-md" placeholder="Quartier, Rue, Repère...">
+      </div>
+      <div>
+        <label class="block text-label-sm text-on-background mb-1 font-semibold">Mode de Paiement</label>
+        <select id="cust-payment" class="w-full px-4 py-2.5 rounded-xl border border-outline-variant bg-surface focus:outline-none focus:border-primary text-body-md">
+          <option value="Espèces à la livraison">Espèces à la livraison</option>
+          <option value="MVola">MVola</option>
+          <option value="Orange Money">Orange Money</option>
+          <option value="Airtel Money">Airtel Money</option>
+        </select>
+      </div>
+      
+      <div class="pt-4 border-t border-surface-variant flex justify-between items-center">
+        <div>
+          <span class="text-xs text-on-surface-variant block">Total à payer</span>
+          <span id="modal-total" class="text-headline-lg-mobile font-bold text-primary">34,000 Ar</span>
+        </div>
+        <button type="submit" class="bg-primary text-on-primary px-6 py-3 rounded-full font-label-sm hover:bg-primary-container transition-colors shadow-md">
+          Confirmer la commande
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Confirmation de Commande -->
+<div id="success-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+  <div class="bg-surface-container-lowest rounded-2xl p-6 md:p-8 max-w-md w-full text-center shadow-2xl border border-outline-variant/30">
+    <div class="w-16 h-16 bg-secondary-fixed text-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+      <span class="material-symbols-outlined text-3xl">check_circle</span>
+    </div>
+    <h3 class="text-headline-lg font-headline-lg text-primary mb-2">Commande Enregistrée !</h3>
+    <p class="text-body-md text-on-surface-variant mb-4">Merci pour votre commande chez Chez Saveur. Votre repas est en cours de préparation.</p>
+    <div class="bg-surface-container p-4 rounded-xl text-left text-sm text-on-surface-variant mb-6 space-y-1" id="order-summary-box">
+      <!-- Récapitulatif généré par script -->
+    </div>
+    <button id="close-success" class="w-full bg-primary text-on-primary py-3 rounded-full font-label-sm hover:bg-primary-container transition-colors">
+      Fermer
+    </button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1">
+<span class="text-headline-lg font-headline-lg text-primary dark:text-primary-fixed-dim">Chez Saveur</span>
+<p class="text-body-md font-body-md text-on-surface-variant mt-4">Passion Culinaire &amp; Héritage.</p>
+</div>
+<div class="col-span-1 md:col-span-3 flex flex-wrap gap-6 md:justify-end items-end">
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="#">Politique de confidentialité</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="#">Conditions d'utilisation</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="../contact_chez_saveur/code.html">Contact</a>
+<a class="text-label-sm font-label-sm text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="#">Presse</a>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-surface-variant text-center md:text-left">
+<p class="text-body-md font-body-md text-on-surface-variant">© 2024 Chez Saveur. Passion Culinaire &amp; Héritage.</p>
+</div>
+</div>
+</footer>
+
+<script>
+  const products = [
+    { id: 1, name: "Poulet Grillé Façon Chef", price: 15000 },
+    { id: 2, name: "Spaghetti Bolognaise", price: 12000 },
+    { id: 3, name: "Filet de Poisson au Citron", price: 18000 },
+    { id: 4, name: "Crêpe Gourmande", price: 8000 }
+  ];
+
+  let cart = [
+    { id: 1, name: "Poulet Grillé Façon Chef", price: 15000, qty: 1 },
+    { id: 4, name: "Crêpe Gourmande", price: 8000, qty: 2 }
+  ];
+
+  const DELIVERY_FEE = 3000;
+
+  function formatPrice(amount) {
+    return amount.toLocaleString('fr-FR') + " Ar";
+  }
+
+  function updateCartUI() {
+    const container = document.getElementById('cart-items-container');
+    const subtotalEl = document.getElementById('subtotal-display');
+    const deliveryEl = document.getElementById('delivery-display');
+    const totalEl = document.getElementById('total-display');
+    const modalTotalEl = document.getElementById('modal-total');
+
+    if (cart.length === 0) {
+      container.innerHTML = `
+        <div class="text-center py-8 text-on-surface-variant">
+          <span class="material-symbols-outlined text-4xl mb-2 opacity-50">remove_shopping_cart</span>
+          <p class="font-body-md">Votre panier est vide.</p>
+        </div>
+      `;
+      subtotalEl.innerText = formatPrice(0);
+      deliveryEl.innerText = formatPrice(0);
+      totalEl.innerText = formatPrice(0);
+      if (modalTotalEl) modalTotalEl.innerText = formatPrice(0);
+      return;
+    }
+
+    let subtotal = 0;
+    container.innerHTML = cart.map(item => {
+      const itemTotal = item.price * item.qty;
+      subtotal += itemTotal;
+      return `
+        <div class="flex justify-between items-center py-3 border-b border-surface-variant/50">
+          <div class="flex-grow">
+            <p class="font-label-sm text-on-background">${item.name}</p>
+            <div class="flex items-center mt-1 text-on-surface-variant">
+              <button onclick="changeQty(${item.id}, -1)" class="text-primary hover:bg-surface-container-high rounded-full w-6 h-6 flex items-center justify-center transition-colors">-</button>
+              <span class="mx-3 text-sm font-medium">${item.qty}</span>
+              <button onclick="changeQty(${item.id}, 1)" class="text-primary hover:bg-surface-container-high rounded-full w-6 h-6 flex items-center justify-center transition-colors">+</button>
+            </div>
+          </div>
+          <div class="text-right ml-4">
+            <p class="font-body-md font-medium text-on-background">${formatPrice(itemTotal)}</p>
+            <button onclick="removeItem(${item.id})" class="text-xs text-error hover:underline mt-1">Retirer</button>
+          </div>
+        </div>
+      `;
+    }).join('');
+
+    const total = subtotal + (subtotal > 0 ? DELIVERY_FEE : 0);
+    subtotalEl.innerText = formatPrice(subtotal);
+    deliveryEl.innerText = formatPrice(subtotal > 0 ? DELIVERY_FEE : 0);
+    totalEl.innerText = formatPrice(total);
+    if (modalTotalEl) modalTotalEl.innerText = formatPrice(total);
+  }
+
+  function addToCart(id) {
+    const prod = products.find(p => p.id === id);
+    if (!prod) return;
+    const existing = cart.find(item => item.id === id);
+    if (existing) {
+      existing.qty += 1;
+    } else {
+      cart.push({ ...prod, qty: 1 });
+    }
+    updateCartUI();
+  }
+
+  function changeQty(id, delta) {
+    const item = cart.find(i => i.id === id);
+    if (!item) return;
+    item.qty += delta;
+    if (item.qty <= 0) {
+      removeItem(id);
+    } else {
+      updateCartUI();
+    }
+  }
+
+  function removeItem(id) {
+    cart = cart.filter(i => i.id !== id);
+    updateCartUI();
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    updateCartUI();
+
+    const checkoutBtn = document.getElementById('checkout-btn');
+    const checkoutModal = document.getElementById('checkout-modal');
+    const closeModal = document.getElementById('close-modal');
+    const orderForm = document.getElementById('order-form');
+    const successModal = document.getElementById('success-modal');
+    const closeSuccess = document.getElementById('close-success');
+
+    checkoutBtn.addEventListener('click', () => {
+      if (cart.length === 0) {
+        alert("Votre panier est vide ! Veuillez ajouter des articles.");
+        return;
+      }
+      checkoutModal.classList.remove('hidden');
+    });
+
+    closeModal.addEventListener('click', () => {
+      checkoutModal.classList.add('hidden');
+    });
+
+    orderForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('cust-name').value;
+      const phone = document.getElementById('cust-phone').value;
+      const address = document.getElementById('cust-address').value;
+      const payment = document.getElementById('cust-payment').value;
+
+      let subtotal = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
+      let total = subtotal + DELIVERY_FEE;
+
+      const summaryBox = document.getElementById('order-summary-box');
+      summaryBox.innerHTML = `
+        <p><strong>Client :</strong> ${name}</p>
+        <p><strong>Contact :</strong> ${phone}</p>
+        <p><strong>Adresse :</strong> ${address}</p>
+        <p><strong>Paiement :</strong> ${payment}</p>
+        <p class="pt-2 border-t border-surface-variant mt-2"><strong>Total réglé :</strong> ${formatPrice(total)}</p>
+      `;
+
+      checkoutModal.classList.add('hidden');
+      successModal.classList.remove('hidden');
+
+      cart = [];
+      updateCartUI();
+      orderForm.reset();
+    });
+
+    closeSuccess.addEventListener('click', () => {
+      successModal.classList.add('hidden');
+    });
+  });
+</script>
+</body></html>

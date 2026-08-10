@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="stylesheet" href="../style.css">
+<title>Chez Saveur - Galerie</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Libre+Caslon+Text:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#843019",
+                        "surface-container-highest": "#ede0d9",
+                        "secondary-fixed": "#c8ecc9",
+                        "secondary": "#47664b",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#484743",
+                        "surface-bright": "#fff8f5",
+                        "surface-container-high": "#f2e6de",
+                        "on-tertiary-container": "#e3e0db",
+                        "outline-variant": "#dcc1ba",
+                        "inverse-primary": "#ffb5a1",
+                        "tertiary-container": "#65635f",
+                        "on-secondary-container": "#4c6c50",
+                        "inverse-on-surface": "#fbeee7",
+                        "surface": "#fff8f5",
+                        "surface-variant": "#ede0d9",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#2f4d34",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c9c6c1",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#c8ecc9",
+                        "on-background": "#201a16",
+                        "primary-container": "#a3472e",
+                        "primary-fixed-dim": "#ffb5a1",
+                        "on-surface": "#201a16",
+                        "surface-tint": "#9d422a",
+                        "on-primary-container": "#ffd8ce",
+                        "surface-container": "#f8ebe4",
+                        "surface-dim": "#e4d8d0",
+                        "on-secondary-fixed": "#03210c",
+                        "tertiary": "#4d4b48",
+                        "inverse-surface": "#362f2a",
+                        "tertiary-fixed": "#e6e2dd",
+                        "on-primary-fixed-variant": "#7e2c15",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "outline": "#89726c",
+                        "primary-fixed": "#ffdbd1",
+                        "secondary-fixed-dim": "#adcfae",
+                        "on-primary-fixed": "#3c0800",
+                        "on-surface-variant": "#56423d",
+                        "surface-container-low": "#fef1ea",
+                        "background": "#fff8f5",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "display-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .pattern-bg {
+            background-image: radial-gradient(var(--tw-colors-primary-fixed) 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.05;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased relative min-h-screen flex flex-col">
+<!-- Background Pattern -->
+<div class="absolute inset-0 pattern-bg pointer-events-none z-0"></div>
+<!-- Navigation -->
+<nav class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-sm dark:shadow-none docked full-width top-0 sticky z-50">
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+        <a class="text-headline-lg font-headline-lg text-primary dark:text-inverse-primary tracking-tight" href="../accueil_chez_saveur/code.html">Chez Saveur</a>
+    
+    <!-- Desktop Nav -->
+   <ul class="hidden md:flex items-center gap-1.5 lg:gap-3">
+  <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../accueil_chez_saveur/code.html">Accueil</a></li>
+  <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../menu_chez_saveur_1/code.html">Menu</a></li>
+  <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../sp_cialit_s_chez_saveur_1/code.html">Spécialités</a></li>
+  <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../r_servation_chez_saveur_1/code.html">Réservation</a></li>
+  <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../commande_en_ligne_chez_saveur_1/code.html">Commande</a></li>
+  <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../galerie_chez_saveur/code.html">Galerie</a></li>
+  <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../v_nements_offres_chez_saveur/code.html">Événements</a></li>
+  <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../avis_clients_chez_saveur/code.html">Avis</a></li>
+  <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../propos_chez_saveur_1/code.html">À Propos</a></li>
+  <li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../contact_chez_saveur/code.html">Contact</a></li>
+</ul>
+<!-- 
+    <button class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary px-6 py-2.5 rounded-full text-label-sm font-label-sm hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm scale-95 active:scale-90 duration-200" onclick="window.location.href='../r_servation_chez_saveur_1/code.html'">
+      Réserver une table
+    </button>
+     -->
+    <!-- Mobile Menu Toggle -->
+    <button class="md:hidden text-primary p-2">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow relative z-10 w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<!-- Header Section -->
+<header class="text-center mb-16 md:mb-24">
+<h1 class="text-display-lg font-display-lg text-primary mb-6">Notre Galerie</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto italic">
+                "Un plat se déguste avec le palais, mais se découvre d'abord avec les yeux."
+            </p>
+</header>
+<!-- Bento Grid Gallery -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[250px] md:auto-rows-[300px]">
+<!-- Large Featured Item (Spans 2 cols, 2 rows) -->
+<div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group shadow-sm">
+<img alt="Plat signature" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPTLrswB4DbQ9bxaN_eK1SGzc68s5UhO7HmlEM61dPXf4-Ok7oY5f0ipddk8Zq03ygXgLQLL5rG4TodeeZzEnMl6zh-jdjMpgdwFbmZKOzNCQsupPlgDQwQy_pdrY2m2gfexIaEDbs9ZR9XU3Kg5z5OoWwi2kiPr1jXgEpL4ZmMWN1V3eSxS_JvZzH7GEBdzcga6JqYFG3KDtHGaDcVfFjby7jf7_VDi7EKF4JiwbUxiaOscxDUahsiC__dXQU1at8ZA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+<span class="text-white text-headline-lg-mobile font-headline-lg-mobile">Notre Plat Signature</span>
+</div>
+</div>
+<!-- Standard Items -->
+<div class="rounded-xl overflow-hidden relative group shadow-sm bg-surface-container-lowest">
+<img alt="Entrée délicate" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArsfW9U2fiLnbpne8FFt4cs6QoU-Pqo31DDZ1uon_JcNGvfRTKiBXQufu5FYXfLFYvNbRLXBWJtc4pUusjbr_mWJM375QJQB9X4WPr4-wRbV4HOZG1maj-xaVJgv55Sehkkip9SRAXgJSVnSnp9xrmAEDL4b5f6OklpsmLtLQYlWoW-MnLKACNI6LYAObAFpHYrXYKjirjUL8lhrsBIwEiZwGQzgg-eGs8N2qESqe0GCcBbBztK5Gl5-w__6ikn3zpwg"/>
+</div>
+<div class="rounded-xl overflow-hidden relative group shadow-sm bg-surface-container-lowest">
+<img alt="Cocktails rafraîchissants" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3meadYs6Zd_qKuLwBj8CvAkDy76-84siHE5jGccKhMcNCmzSpkb-uK31P-OusJIgs2bIe3tqkNLspgkSah9KTJ9quZAs0Gxi-73tSfKLHcoGX4Buz-h-IXAParop2aDj7naJeFQi7v6vkL5y5LWI9vioCx1Lc8da2SCuhPh5iq1jG9eF0BCicKc4YK8a6nlkoesWNrtGmAYHXX3KkrIZ5aWX411kPNBTWZmf1WZrCSHauqGhUWXzrw3vkNkLWt6iGSQ"/>
+</div>
+<!-- Wide Item (Spans 2 cols) -->
+<div class="md:col-span-2 rounded-xl overflow-hidden relative group shadow-sm bg-surface-container-lowest">
+<img alt="Spaghetti bolognaise" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXVAxG-KvsIEcJOLZSCYdoe4RKsOWrhKzHCj26qug7jN9y8u_NMplNhjVCgiCDZBmB6XGHZUT72ictQRrm11KAL6e9DmCwZ2IYToOrLXG6a_wB0k6sin8FQgdb2woOyedhkfxE5LAwHTlVE51c9GA0QvHthkhJ8Zs46Z9d8RBdyvenbCKJbtOGBjyFsxVeScX1rdtuvBNwplmsrfO_uw2HiiUP092OqUiyrKlT022S4biUDAG4GBBvU8Ob1Lfv6ntoSg"/>
+</div>
+<!-- Text/Quote Block in Grid -->
+<div class="rounded-xl overflow-hidden relative shadow-sm bg-primary text-on-primary flex flex-col justify-center items-center p-8 text-center">
+<span class="material-symbols-outlined text-4xl mb-4 opacity-80">restaurant</span>
+<h3 class="text-headline-lg-mobile font-headline-lg-mobile mb-2">L'Art de la Table</h3>
+<p class="text-label-sm font-label-sm opacity-90">Chaque détail compte dans l'expérience Chez Saveur.</p>
+</div>
+<div class="rounded-xl overflow-hidden relative group shadow-sm bg-surface-container-lowest">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A warm, inviting shot of a beautifully set restaurant table with glowing candlelight and elegant tableware in a sophisticated, terracotta-toned room. Soft ambient shadows emphasize the tactile minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDM6nKv0WXB4NY_vKQB3-3xpHmgz-xtNEAbLwV4Eh67AtAenJk4fR3BCvzZ3jtC68_B0GsN4S0cWL7wv1eaZCiuF009VXmWZ6mXmdlfYZvTKac02Ujv9Vk7DnElZMkHMyWUWOuEvNN3gGRESbSPP2JSEzM-GTxbq_HGzpt-obnetbQTbr7kQkb3P3CNEjtQdzE3wS4biylE1FgpwirG4RCwK1huvwEXjGqD4sgsyznBmucs3-YDHMoE"/>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface mt-auto z-10 relative">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2">
+<p class="text-headline-lg font-headline-lg text-primary dark:text-primary-fixed-dim mb-4">Chez Saveur</p>
+<p class="text-body-md font-body-md text-on-surface-variant dark:text-on-tertiary-container mb-6 max-w-sm">
+                    © 2024 Chez Saveur. Passion Culinaire &amp; Héritage.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="text-label-sm font-label-sm text-primary dark:text-inverse-primary mb-4 font-semibold uppercase tracking-wider">Liens Utiles</h4>
+<ul class="space-y-3">
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary hover:underline decoration-primary dark:decoration-inverse-primary transition-all duration-300" href="#">Politique de confidentialité</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary hover:underline decoration-primary dark:decoration-inverse-primary transition-all duration-300" href="#">Conditions d'utilisation</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="text-label-sm font-label-sm text-primary dark:text-inverse-primary mb-4 font-semibold uppercase tracking-wider">Plus</h4>
+<ul class="space-y-3">
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary hover:underline decoration-primary dark:decoration-inverse-primary transition-all duration-300" href="../contact_chez_saveur/code.html">Contact</a></li>
+<li><a class="text-body-md font-body-md text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary hover:underline decoration-primary dark:decoration-inverse-primary transition-all duration-300" href="#">Presse</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>

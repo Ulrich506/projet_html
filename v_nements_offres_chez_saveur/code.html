@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="stylesheet" href="../style.css">
+<title>Événements &amp; Offres | Chez Saveur</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&amp;family=Libre+Caslon+Text:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#843019",
+                        "surface-container-highest": "#ede0d9",
+                        "secondary-fixed": "#c8ecc9",
+                        "secondary": "#47664b",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#484743",
+                        "surface-bright": "#fff8f5",
+                        "surface-container-high": "#f2e6de",
+                        "on-tertiary-container": "#e3e0db",
+                        "outline-variant": "#dcc1ba",
+                        "inverse-primary": "#ffb5a1",
+                        "tertiary-container": "#65635f",
+                        "on-secondary-container": "#4c6c50",
+                        "inverse-on-surface": "#fbeee7",
+                        "surface": "#fff8f5",
+                        "surface-variant": "#ede0d9",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#2f4d34",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c9c6c1",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#c8ecc9",
+                        "on-background": "#201a16",
+                        "primary-container": "#a3472e",
+                        "primary-fixed-dim": "#ffb5a1",
+                        "on-surface": "#201a16",
+                        "surface-tint": "#9d422a",
+                        "on-primary-container": "#ffd8ce",
+                        "surface-container": "#f8ebe4",
+                        "surface-dim": "#e4d8d0",
+                        "on-secondary-fixed": "#03210c",
+                        "tertiary": "#4d4b48",
+                        "inverse-surface": "#362f2a",
+                        "tertiary-fixed": "#e6e2dd",
+                        "on-primary-fixed-variant": "#7e2c15",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "outline": "#89726c",
+                        "primary-fixed": "#ffdbd1",
+                        "secondary-fixed-dim": "#adcfae",
+                        "on-primary-fixed": "#3c0800",
+                        "on-surface-variant": "#56423d",
+                        "surface-container-low": "#fef1ea",
+                        "background": "#fff8f5",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "display-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .pattern-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23843019' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .soft-shadow {
+            box-shadow: 0 10px 40px -10px rgba(132, 48, 25, 0.08);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased pattern-bg min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md shadow-sm dark:shadow-none docked full-width top-0 sticky z-50">
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+            <a class="text-headline-lg font-headline-lg text-primary dark:text-inverse-primary tracking-tight" href="../accueil_chez_saveur/code.html">Chez Saveur</a>
+
+
+    <ul class="hidden md:flex items-center gap-1.5 lg:gap-3">
+  <li>
+    <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../accueil_chez_saveur/code.html">Accueil</a>
+  </li>
+  <li>
+    <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../menu_chez_saveur_1/code.html">Menu</a>
+  </li>
+  <li>
+    <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../sp_cialit_s_chez_saveur_1/code.html">Spécialités</a>
+  </li>
+  <li>
+    <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../r_servation_chez_saveur_1/code.html">Réservation</a>
+  </li>
+  <li>
+    <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../commande_en_ligne_chez_saveur_1/code.html">Commande</a>
+  </li>
+  <li>
+    <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../galerie_chez_saveur/code.html">Galerie</a>
+  </li>
+  <li>
+    <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../v_nements_offres_chez_saveur/code.html">Événements</a>
+  </li>
+  <li>
+    <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../avis_clients_chez_saveur/code.html">Avis</a>
+  </li>
+  <li>
+    <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../propos_chez_saveur_1/code.html">À Propos</a>
+  </li>
+  <li>
+    <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../contact_chez_saveur/code.html">Contact</a>
+  </li>
+</ul>
+<!-- 
+    <button class="bg-primary text-on-primary rounded-full px-6 py-2.5 font-label-sm text-label-sm hover:-translate-y-0.5 transition-transform duration-300 shadow-sm hidden md:block" onclick="window.location.href='../r_servation_chez_saveur_1/code.html'">
+      Réserver une table
+    </button> -->
+
+    <button class="md:hidden text-primary p-2">
+      <span class="material-symbols-outlined" data-icon="menu">menu</span>
+    </button>
+  </div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-20 flex flex-col gap-16 md:gap-24">
+<!-- Hero Section -->
+<header class="text-center max-w-3xl mx-auto space-y-6">
+<span class="text-primary font-label-sm text-label-sm tracking-widest uppercase bg-surface-container-high px-4 py-1.5 rounded-full inline-block">Moments Inoubliables</span>
+<h1 class="font-display-lg text-display-lg md:text-[56px] md:leading-[64px] text-on-surface">Événements &amp; Offres Spéciales</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Célébrez les moments importants avec nous. Découvrez nos formules sur-mesure pour vos événements et profitez de nos offres exclusives.</p>
+</header>
+<!-- Offre du Moment (Featured) -->
+<section class="relative bg-surface-container-lowest rounded-3xl overflow-hidden soft-shadow">
+<div class="grid grid-cols-1 lg:grid-cols-2">
+<div class="p-8 md:p-16 flex flex-col justify-center order-2 lg:order-1 relative z-10">
+<div class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm mb-6">
+<span class="material-symbols-outlined" data-icon="local_fire_department">local_fire_department</span>
+<span>Offre du Moment</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">MENU DU WEEK-END</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Un voyage culinaire exclusif pour clôturer la semaine en beauté. Profitez d'une sélection de nos meilleurs plats à un tarif privilégié.</p>
+<div class="flex items-end gap-3 mb-10">
+<span class="font-display-lg text-display-lg text-primary">25 000</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant pb-1">Ar</span>
+</div>
+<button class="bg-primary text-on-primary rounded-full px-8 py-4 font-label-sm text-label-sm hover:-translate-y-1 transition-transform duration-300 shadow-md w-fit inline-flex items-center gap-2">
+<span>Réserver cette offre</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="relative h-64 lg:h-auto order-1 lg:order-2">
+<img alt="Visuel festif de dessert" class="absolute inset-0 w-full h-full object-cover rounded-t-3xl lg:rounded-l-none lg:rounded-r-3xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmvffnroKWtmuPGe2d3ITuU5U6NT51AQhvkU3UfyRdstHoibZYHAV3QiJslrolnTc31qLkqBZhmut1L9vtTcSFJaEBf2-wst704nMO6Cvxfa1lkQp0ytOZvJjmSZDbKntjQDtQe7EoY4Az6dvMKDONEUtOXqLAqwsV8juZLCqjOfpdiMFERvJAAF_Kn3LZVVbohHBls3VrL-LXzOfoWLqr7FwiRWAmmLoc4Tgukte5erfBZ1eNvBFHEznxdF9Jmf03qA"/>
+<div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-l from-surface-container-lowest/80 lg:from-transparent to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Events -->
+<section>
+<div class="flex items-center gap-4 mb-10">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Vos Événements Privés</h2>
+<div class="h-px bg-outline-variant flex-grow"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+<!-- Anniversaires -->
+<article class="md:col-span-8 bg-surface-container-lowest rounded-3xl overflow-hidden soft-shadow relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A festive and elegant birthday celebration setup at a modern organic restaurant. Warm lighting, a beautifully decorated cake with subtle glowing candles on a rustic wooden table. Soft cream plates, terracotta napkins, and fresh floral arrangements. High-quality food photography style, inviting and intimate atmosphere." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYOdFGeriwzKfWpu5W9jV0dNvJOOCEzd1-lmO89sIH1AkZJFF4RT5J6IKz1clZMQT3zdjVRPMZt-66FyU_mN2rJ9h0VAwQjAnIne_CakmWEX94tM9LVA_ur183tAIqtkYuAJlYG1T6gmwd-k17VtAL4ZBbEYF9t8wynl828h3bZt6k8heJj9GRcC6RfXgiC-i2WA2OcsweIP4Yra6Zf2rqwiJPOf6zGwCBy-IB8CezPr6jfh9rfj_H')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/40 to-transparent"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<div class="bg-surface-container-highest text-primary font-label-sm text-label-sm px-3 py-1 rounded-full w-fit mb-3">Festif</div>
+<h3 class="font-headline-lg text-headline-lg text-on-tertiary mb-2">Anniversaires</h3>
+<p class="font-body-md text-body-md text-surface-container max-w-md">Des gâteaux sur-mesure et une ambiance festive pour célébrer entouré de vos proches.</p>
+</div>
+</article>
+<!-- Dîners Romantiques -->
+<article class="md:col-span-4 bg-surface-container-lowest rounded-3xl overflow-hidden soft-shadow relative group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A close-up of a romantic dinner setting for two at a premium restaurant. Two elegant glasses of red wine catching soft candlelight. A beautifully plated dish in the foreground, soft blurred background with intimate lighting. Modern organic aesthetic, terracotta and cream tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIfqXghx232HCPcC87t_f7lALNqFRTEW8OwhLHExt4BC9Tm4e88pkktEfWPQA3m3l1BEuNRAPh0q85GREwieMA3mNv4Oxw7nbpj80mGnsO6EDHo9dBVZtxDC1lsHmkIc45dD05OBB9xGWMrcCuEE7DWj8zd4oudPDgMfxIOoZ_JBNFwX2XxI2RWWM9ibxexkLwR-muPTFQ2qZBa_TCOqay3dIin6EA6G8NgX_tNx2Bx74AsPqrmiVW')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-background/90 via-on-background/40 to-transparent"></div>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<div class="bg-surface-container-highest text-primary font-label-sm text-label-sm px-3 py-1 rounded-full w-fit mb-3">Intime</div>
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-tertiary mb-2">Dîners Romantiques</h3>
+<p class="font-body-md text-body-md text-surface-container">Une table discrète, des bougies et un menu dégustation pensé pour deux.</p>
+</div>
+</article>
+<!-- Soirées Spéciales -->
+<article class="md:col-span-12 bg-secondary-fixed rounded-3xl overflow-hidden soft-shadow relative flex items-center justify-between p-8 md:p-12">
+<div class="max-w-xl relative z-10">
+<div class="inline-flex items-center gap-2 text-on-secondary-container font-label-sm text-label-sm mb-4">
+<span class="material-symbols-outlined" data-icon="celebration">celebration</span>
+<span>Privatisation</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-secondary-fixed mb-4">Soirées Spéciales &amp; Entreprises</h3>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant mb-8">Pour vos repas d'affaires, lancements ou célébrations privées. Nous proposons la privatisation partielle ou totale de notre salle.</p>
+<button class="border border-on-secondary-container text-on-secondary-container hover:bg-on-secondary-container hover:text-secondary-fixed rounded-full px-6 py-2.5 font-label-sm text-label-sm transition-colors duration-300">
+                            Demander un devis
+                        </button>
+</div>
+<div class="hidden md:block w-1/3 h-full absolute right-0 top-0">
+<div class="w-full h-full bg-secondary opacity-10" style="mask-image: radial-gradient(ellipse at right, black, transparent);"></div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface full-width flat no shadows">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full max-w-container-max mx-auto">
+<div class="md:col-span-1 flex flex-col gap-4">
+<div class="text-headline-lg font-headline-lg text-primary dark:text-primary-fixed-dim">
+                    Chez Saveur
+                </div>
+<p class="text-on-surface-variant font-body-md text-body-md">
+                    © 2024 Chez Saveur. Passion Culinaire &amp; Héritage.
+                </p>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-start pt-2">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-sm text-label-sm hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="#">Politique de confidentialité</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-sm text-label-sm hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="#">Conditions d'utilisation</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-sm text-label-sm hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="../contact_chez_saveur/code.html">Contact</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 font-label-sm text-label-sm hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 transition-opacity duration-300" href="#">Presse</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="light" lang="fr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link rel="stylesheet" href="../style.css">
+<title>Menu - Chez Saveur</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&amp;family=Libre+Caslon+Text:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#843019",
+                        "surface-container-highest": "#ede0d9",
+                        "secondary-fixed": "#c8ecc9",
+                        "secondary": "#47664b",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#484743",
+                        "surface-bright": "#fff8f5",
+                        "surface-container-high": "#f2e6de",
+                        "on-tertiary-container": "#e3e0db",
+                        "outline-variant": "#dcc1ba",
+                        "inverse-primary": "#ffb5a1",
+                        "tertiary-container": "#65635f",
+                        "on-secondary-container": "#4c6c50",
+                        "inverse-on-surface": "#fbeee7",
+                        "surface": "#fff8f5",
+                        "surface-variant": "#ede0d9",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed-variant": "#2f4d34",
+                        "on-tertiary-fixed": "#1c1c19",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c9c6c1",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#c8ecc9",
+                        "on-background": "#201a16",
+                        "primary-container": "#a3472e",
+                        "primary-fixed-dim": "#ffb5a1",
+                        "on-surface": "#201a16",
+                        "surface-tint": "#9d422a",
+                        "on-primary-container": "#ffd8ce",
+                        "surface-container": "#f8ebe4",
+                        "surface-dim": "#e4d8d0",
+                        "on-secondary-fixed": "#03210c",
+                        "tertiary": "#4d4b48",
+                        "inverse-surface": "#362f2a",
+                        "tertiary-fixed": "#e6e2dd",
+                        "on-primary-fixed-variant": "#7e2c15",
+                        "on-error": "#ffffff",
+                        "error": "#ba1a1a",
+                        "outline": "#89726c",
+                        "primary-fixed": "#ffdbd1",
+                        "secondary-fixed-dim": "#adcfae",
+                        "on-primary-fixed": "#3c0800",
+                        "on-surface-variant": "#56423d",
+                        "surface-container-low": "#fef1ea",
+                        "background": "#fff8f5",
+                        "on-primary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "margin-desktop": "64px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Be Vietnam Pro"],
+                        "headline-lg-mobile": ["Libre Caslon Text"],
+                        "label-sm": ["Be Vietnam Pro"],
+                        "headline-lg": ["Libre Caslon Text"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "display-lg": ["Libre Caslon Text"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            /* Lamba-inspired subtle pattern */
+            background-image: radial-gradient(theme('colors.surface-variant') 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        
+        .soft-shadow {
+            box-shadow: 0 10px 40px -10px rgba(132, 48, 25, 0.08);
+        }
+        
+        .menu-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, theme('colors.outline-variant'), transparent);
+            margin: 1.5rem 0;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-surface/90 dark:bg-surface-dim/90 backdrop-blur-md w-full top-0 sticky shadow-sm dark:shadow-none z-50">
+  <div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 w-full max-w-container-max mx-auto">
+           <a class="text-headline-lg font-headline-lg text-primary dark:text-inverse-primary tracking-tight" href="../accueil_chez_saveur/code.html">Chez Saveur</a>
+
+
+    <div class="hidden md:flex items-center gap-2 lg:gap-4">
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../accueil_chez_saveur/code.html">Accueil</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../menu_chez_saveur_1/code.html">Menu</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../sp_cialit_s_chez_saveur_1/code.html">Spécialités</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../r_servation_chez_saveur_1/code.html">Réservation</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../commande_en_ligne_chez_saveur_1/code.html">Commande</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../galerie_chez_saveur/code.html">Galerie</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../v_nements_offres_chez_saveur/code.html">Événements</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../avis_clients_chez_saveur/code.html">Avis</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../propos_chez_saveur_1/code.html">À Propos</a>
+  <a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:bg-surface-container-high/50 dark:hover:bg-tertiary-container/20 rounded-xl px-3 py-2 text-label-sm font-label-sm" href="../contact_chez_saveur/code.html">Contact</a>
+</div>
+
+    <!-- <div class="hidden md:block">
+      <button class="bg-primary text-on-primary font-label-sm text-label-sm px-6 py-3 rounded-full hover:-translate-y-0.5 transition-transform duration-300 shadow-sm" onclick="window.location.href='../r_servation_chez_saveur_1/code.html'">
+        Réserver une table
+      </button>
+    </div> -->
+
+    <div class="md:hidden flex items-center">
+      <span class="material-symbols-outlined text-primary text-3xl">menu</span>
+    </div>
+  </div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 md:py-24">
+<!-- Header Section -->
+<div class="text-center mb-16 md:mb-24">
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Notre Menu</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Une célébration des saveurs locales, préparée avec passion et des ingrédients frais de saison. Découvrez l'héritage culinaire revisité.
+            </p>
+</div>
+<!-- Bento Grid Layout for Menu -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Entrées (Span 12 on mobile, 4 on desktop) -->
+<section class="md:col-span-4 bg-surface-container-lowest rounded-[2rem] p-8 soft-shadow relative overflow-hidden h-fit">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary-container rounded-full blur-3xl opacity-30 -mr-16 -mt-16 pointer-events-none"></div>
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">tapas</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Entrées</h2>
+</div>
+<div class="space-y-6">
+<div class="group">
+<div class="flex justify-between items-baseline">
+<h3 class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">Salade Maison</h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">12 000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant/80 text-sm mt-1">Laitue croquante, tomates cerises, vinaigrette au citron et herbes de la région.</p>
+<div class="flex gap-2 mt-2">
+<span class="inline-block bg-secondary-fixed/50 text-on-secondary-fixed-variant px-2 py-0.5 rounded-full text-xs font-label-sm">Frais</span>
+<span class="inline-block bg-surface-variant text-on-surface-variant px-2 py-0.5 rounded-full text-xs font-label-sm">Végétarien</span>
+</div>
+</div>
+<div class="menu-divider"></div>
+<div class="group">
+<div class="flex justify-between items-baseline">
+<h3 class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">Soupe du Jour</h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">10 000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant/80 text-sm mt-1">Velouté réconfortant selon les récoltes du marché, servi avec croûtons aillés.</p>
+</div>
+<div class="menu-divider"></div>
+<div class="group">
+<div class="flex justify-between items-baseline">
+<h3 class="font-body-lg text-body-lg text-on-surface group-hover:text-primary transition-colors">Samoussa au Boeuf</h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">8 000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant/80 text-sm mt-1">Trois pièces croustillantes, farce épicée doucement, sauce piquante en accompagnement.</p>
+<div class="flex gap-2 mt-2">
+<span class="inline-block bg-primary-fixed/50 text-on-primary-fixed-variant px-2 py-0.5 rounded-full text-xs font-label-sm">Épicé</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Plats Principaux (Span 12 on mobile, 8 on desktop) -->
+<section class="md:col-span-8 space-y-gutter">
+<div class="flex items-center gap-3 mb-2 ml-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Plats Principaux</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<!-- Poulet Card -->
+<div class="bg-surface-container-lowest rounded-[2rem] soft-shadow overflow-hidden group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABOM_nSUWKVataXnO31QKX9NB4U-CyRZFW0QXLu0FcEQ1CWL2Mhcc5v6OEWAx8IQwytPfqJMJYV4Wg26vhm30JmWCk6uZfxIg4qx5kFxc-tkxmEjigs47eD4iFZqkl5XdTv4gdYdSb3s5weU1EuGZDO0HWsLUzs7vQdyC4g2sTZMwwz8ldgCmvlaUKU4aI0PFNVbs9tCv2Vz0h-DgJvRHSAiL6Z34m_-rFgTX3UHwI1zXrIShQAWO64K11abKbyLhNwQ"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-lg-mobile text-xl font-bold text-on-surface">Poulet Grillé</h3>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/30 px-3 py-1 rounded-full font-bold">25 000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Demi-poulet mariné aux épices douces, grillé à la perfection, servi avec riz et achards.</p>
+<button class="w-full py-2 border border-secondary text-secondary rounded-full font-label-sm hover:bg-secondary/5 transition-colors" onclick="window.location.href='../commande_en_ligne_chez_saveur_1/code.html'">Commander</button>
+</div>
+</div>
+<!-- Spaghetti Card -->
+<div class="bg-surface-container-lowest rounded-[2rem] soft-shadow overflow-hidden group">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNh9mA8ly5TBKS3VZBGCtVUDIQQuTPZqoaSqJKJz3V6p_n9lZ8Zr-nA9Izqe0ctIFGFPG3EDRwc0NSyk0EdVe5J93389f3c0cbCX1VdImiXXRLZYEuXtkTmqs4q0Rh28PxLmLIKM3ubHMo9unJa8AaBfU-gE1VyCpzsXAyvxSZMuIRmXfO1yWuSGDibX7ByiJpDvHeIVVmRPnSKFLbE5peGz4Mn5TUE-yzztTak4Z_DNx4lxJ9A7Hn3yukHlvkkI7NeQ"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-lg-mobile text-xl font-bold text-on-surface">Spaghetti Bolognaise</h3>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/30 px-3 py-1 rounded-full font-bold">22 000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Pâtes al dente, sauce riche à la viande de boeuf mijotée lentement, parmesan râpé.</p>
+<button class="w-full py-2 border border-secondary text-secondary rounded-full font-label-sm hover:bg-secondary/5 transition-colors" onclick="window.location.href='../commande_en_ligne_chez_saveur_1/code.html'">Commander</button>
+</div>
+</div>
+<!-- Steak Card (No Image) -->
+<div class="bg-surface-container-lowest rounded-[2rem] soft-shadow p-6 group flex flex-col justify-between h-full">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-lg-mobile text-xl font-bold text-on-surface">Steak Frites</h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">35 000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 mt-2">Pièce de boeuf tendre, cuisson au choix, sauce au poivre vert de Madagascar, frites maison croustillantes.</p>
+</div>
+<div class="flex gap-2 mt-auto pt-4 border-t border-surface-variant">
+<span class="inline-block bg-primary-fixed/30 text-primary px-2 py-0.5 rounded-full text-xs font-label-sm">Spécialité</span>
+</div>
+</div>
+<!-- Poisson Card (No Image) -->
+<div class="bg-surface-container-lowest rounded-[2rem] soft-shadow p-6 group flex flex-col justify-between h-full">
+<div>
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-lg-mobile text-xl font-bold text-on-surface">Poisson du Lac</h3>
+<span class="font-label-sm text-label-sm text-secondary font-bold">28 000 Ar</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 mt-2">Filet de poisson frais, sauce au beurre blanc et agrumes, tombée d'épinards et pommes vapeur.</p>
+</div>
+<div class="flex gap-2 mt-auto pt-4 border-t border-surface-variant">
+<span class="inline-block bg-secondary-fixed/50 text-on-secondary-fixed-variant px-2 py-0.5 rounded-full text-xs font-label-sm">Local</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Desserts & Boissons (Span 12 across bottom) -->
+<section class="md:col-span-12 grid grid-cols-1 md:grid-cols-2 gap-gutter mt-8">
+<!-- Desserts -->
+<div class="bg-surface-bright rounded-[2rem] p-8 soft-shadow border border-surface-variant">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">cake</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Desserts</h2>
+</div>
+<div class="flex flex-col sm:flex-row gap-6">
+<!-- Crêpe Image focus -->
+<div class="w-full sm:w-1/3 aspect-square rounded-xl overflow-hidden shadow-sm relative">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkP_oiBWTHYVIpWRU-WzYt8tO38iLznU0pcVvMl8wL_52Kbm7Y_G7ndRoX-9aZjHMrwAqLqjkU74QYNWzX19LlrvFFhKWYiPDsL5LuEjxiO-vv_QofGtkPz6nGOwZmpQb_64KlQSgpPt4D6aJ0tolTt5vJYERVKzV4o93n9js1njbmbp5L75bgjiosrMNBlNZqHbBKZqdzBOz9xMn_VbG6U9vYpzZONSTUKEhwFnj_fgO3d3b3BqnoXTpZ_T_DVau19w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-3">
+<span class="text-white font-label-sm text-sm font-bold">Notre Signature</span>
+</div>
+</div>
+<div class="w-full sm:w-2/3 flex flex-col justify-center space-y-4">
+<div class="flex justify-between items-center border-b border-surface-variant/50 pb-2">
+<h3 class="font-body-lg text-lg text-on-surface font-semibold">Crêpe au Chocolat</h3>
+<span class="font-label-sm text-primary font-bold">12 000 Ar</span>
+</div>
+<div class="flex justify-between items-center border-b border-surface-variant/50 pb-2">
+<h3 class="font-body-lg text-lg text-on-surface">Assiette de Fruits</h3>
+<span class="font-label-sm text-secondary font-bold">8 000 Ar</span>
+</div>
+<div class="flex justify-between items-center pb-2">
+<h3 class="font-body-lg text-lg text-on-surface">Coupe de Glace (2 boules)</h3>
+<span class="font-label-sm text-secondary font-bold">9 000 Ar</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Boissons -->
+<div class="bg-surface-container-low rounded-[2rem] p-8 soft-shadow relative overflow-hidden">
+<div class="absolute bottom-0 right-0 w-48 h-48 bg-primary-fixed rounded-full blur-3xl opacity-20 -mr-16 -mb-16 pointer-events-none"></div>
+<div class="flex items-center gap-3 mb-6 relative z-10">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">local_cafe</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary">Boissons</h2>
+</div>
+<div class="space-y-4 relative z-10">
+<div class="flex justify-between items-center">
+<span class="font-body-md text-on-surface">Jus Naturel (Saison)</span>
+<span class="font-label-sm text-on-surface-variant">5 000 Ar</span>
+</div>
+<div class="menu-divider my-2"></div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-on-surface">Eau Minérale (PM / GM)</span>
+<span class="font-label-sm text-on-surface-variant">3 000 / 5 000 Ar</span>
+</div>
+<div class="menu-divider my-2"></div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-on-surface">Soda / Limonade</span>
+<span class="font-label-sm text-on-surface-variant">4 000 Ar</span>
+</div>
+<div class="menu-divider my-2"></div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-on-surface">Café / Thé Local</span>
+<span class="font-label-sm text-on-surface-variant">3 500 Ar</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-12 w-full max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-2 mb-8 md:mb-0">
+<div class="text-headline-lg font-headline-lg text-primary dark:text-primary-fixed-dim mb-4">
+                    Chez Saveur
+                </div>
+<p class="text-on-surface-variant dark:text-on-tertiary-container text-body-md font-body-md max-w-sm">
+                    © 2024 Chez Saveur. Passion Culinaire &amp; Héritage. L'authenticité dans chaque assiette.
+                </p>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-sm text-label-sm text-on-surface dark:text-on-tertiary mb-4 uppercase tracking-wider">Liens Utiles</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Politique de confidentialité</a></li>
+<li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Conditions d'utilisation</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-sm text-label-sm text-on-surface dark:text-on-tertiary mb-4 uppercase tracking-wider">Nous Joindre</h4>
+<ul class="space-y-3">
+<li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 font-body-md text-body-md" href="../contact_chez_saveur/code.html">Contact</a></li>
+<li><a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary dark:hover:text-inverse-primary transition-colors duration-300 hover:underline decoration-primary dark:decoration-inverse-primary opacity-80 hover:opacity-100 font-body-md text-body-md" href="#">Presse</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>
